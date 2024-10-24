@@ -29,4 +29,6 @@ DESCRIBE books;
 
 DESCRIBE borrowings;
 
+DROP DATABASE library;
+
 DESCRIBE members; 

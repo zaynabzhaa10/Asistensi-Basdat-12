@@ -34,7 +34,7 @@ WHERE orderNumber > 10250
 
 SELECT orderNumber, orderLineNumber, productCode, quantityOrdered, priceEach, (quantityOrdered * priceEach * 0.95) AS discountedTotalPrice
 FROM orderDetails
-WHERE(quantityOrdered > 50)]
+WHERE(quantityOrdered > 50)
 		AND priceEach > 100
 		AND productCode NOT LIKE 'S18%'
 ORDER BY discountedTotalPrice DESC;
